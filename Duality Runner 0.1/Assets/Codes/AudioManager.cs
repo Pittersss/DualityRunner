@@ -6,7 +6,6 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public Sounds[] sounds;
-    int chooseMusic;
     void Awake() {
         foreach(Sounds s in sounds)
         {
@@ -16,10 +15,6 @@ public class AudioManager : MonoBehaviour
           s.source.loop = s.loop;
           s.source.volume = s.volume;
         }
-    }
-    void Start() {
-          
-       
     }
     public void Play (string name)
     {  

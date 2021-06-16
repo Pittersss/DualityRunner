@@ -10,7 +10,6 @@ public class PlayerControler : MonoBehaviour
     public bool isGround;
     public GameObject gameOverUI;
     public bool gameIsPaused = false;
-    //public GameObject al;
     public Transform groundPivot;
     public float radius;
     public LayerMask layer;
@@ -26,7 +25,6 @@ public class PlayerControler : MonoBehaviour
         sprite = GetComponentInChildren<SpriteRenderer>();
         gameIsPaused = false;
         isGround = false;
-        //al.SetActive(true);
         bufferCount = -1f;
     }
 

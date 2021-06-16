@@ -23,73 +23,26 @@ public class StretchAndSquash : MonoBehaviour
           StartCoroutine(SquashLandEffect());
           hasLanded = false;
           }
-        CheckAirTime();
-        
-      
-      
+        CheckAirTime();             
     }
     IEnumerator JumpStretchEffect()
     {
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(-.2f,.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale = new Vector3(50f, 25f, 50f);
-
-      
+      for(int i = 0; i <= 9; i++)
+       {
+         transform.localScale += new Vector3(-.2f,.2f,0f);
+         yield return new WaitForSeconds(0.015f);
+       }
+        transform.localScale = new Vector3(50f, 25f, 50f);    
     }
     IEnumerator SquashLandEffect(){
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
 
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale += new Vector3(.2f,-.2f,0f);
-      yield return new WaitForSeconds(0.015f);
-
-      transform.localScale = new Vector3(50f, 25f, 50f);
+       for(int i = 0; i <= 9; i++)
+       {
+         transform.localScale += new Vector3(.2f,-.2f,0f);
+         yield return new WaitForSeconds(0.015f);
+       }
+       transform.localScale = new Vector3(50f, 25f, 50f);
+      
     }
     public void CheckIfLanded(){
      if(inAirTime > 0f)

@@ -21,10 +21,6 @@ public class Enemy_Movement : MonoBehaviour
         {
           Destroy(this.gameObject);
         }
-         if(other.collider.gameObject.transform.CompareTag("Player"))
-        {
-          
-        }
         }
     
 }

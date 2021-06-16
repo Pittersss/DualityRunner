@@ -10,14 +10,7 @@ public class ScoreControl : MonoBehaviour
     public float scoreCount;
     static float hiScoreCount;
     public float pointsPerSecounds;
-
     public bool scoreIncris;
-    void Start()
-    {
-       
-    }
-
-    
     void Update()
     {
         if(scoreIncris)
